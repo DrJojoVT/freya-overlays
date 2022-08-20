@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<settings style="display: none">
+    <!-- IMPORTANT - CHANGE USERNAME HERE -->
+    USERNAME=DrJosephJorgen
+    OPACITY=100 <!-- Keep between 0 and 100 -->
+    <!-- END OF SETTINGS CHANGES -->
+</settings>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/comfy.js@latest/dist/comfy.min.js"></script>
+    <link rel="stylesheet" href="chatbox.css">
+    <script src="code/app.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="chat">
+        </div>
+    </div>
+</body>
+</html>
+<template id="message-template">
+    <div class="message-container">
+        <div class="user-box">
+            <div class="left">
+                <div class="blue-triangle left-triangle"></div>
+            </div>
+            <div class="buffer"></div>
+            <div class="user"></div>
+            <div class="buffer"></div>
+            <div class="right">
+                <div class="blue-triangle right-triangle"></div>
+            </div>
+        </div>
+        <div class="message-box">
+            <div class="message-left"></div>
+            <div class="message"></div> 
+            <div class="message-right"></div>
+            <div class="chevron chevron-right chevron-top"></div>
+            <div class="chevron chevron-left chevron-top"></div>
+            <div class="chevron chevron-right chevron-bottom"></div>
+            <div class="chevron chevron-left chevron-bottom"></div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,148 @@
+@font-face {
+    font-family: SinMediaSans;
+    src: url("assets/SinMedia Sans (FontStruct).ttf");
+}
+@font-face {
+    font-family: Starguard;
+    src: url("assets/starguard.ttf");
+}
+#container {
+    height: 100vh;
+}
+#chat {
+    position: absolute;
+    bottom: 0;
+}
+.message-container {
+    height: 132px;
+    filter: drop-shadow(0 6px 4px rgba(0,0,0,0.5));
+}
+.message {
+    min-height: 50px;
+    width: calc(100% - 102px);
+    background-color: #181818;
+    float: left;
+    font-family: SinMediaSans, sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 6px;
+    padding-left: 6px;
+    bottom: 42px;
+    position: relative;
+}
+.message-box {
+    height: 90px;
+    position: relative;
+    top: 34px;
+    width: 100vw;
+}
+.message-box .message-left {
+    width: 0;
+    height: 0;
+    border-top: 45px solid transparent;
+    border-bottom: 45px solid transparent;
+    border-right: 45px solid #181818;
+    float: left;
+    clear: both;
+    bottom: 42px;
+    position: relative;
+}
+.message-box .message-right
+{
+    width: 0;
+    height: 0;
+    border-top: 45px solid transparent;
+    border-bottom: 45px solid transparent;
+    border-left: 45px solid #181818;
+    float: left;
+    bottom: 42px;
+    position: relative;
+}
+.user-box {
+    position: relative;
+    top: 0;
+    left: 52px;
+    width: calc(100% - 52px);
+}
+.user-box .left {
+    width: 0;
+    height: 0;
+    border-top: 21px solid transparent;
+    border-bottom: 21px solid transparent;
+    border-right: 21px solid #181818;
+    float: left;
+}
+.user-box .right
+{
+    width: 0;
+    height: 0;
+    border-top: 21px solid transparent;
+    border-bottom: 21px solid transparent;
+    border-left: 21px solid #181818;
+    float: left;
+}
+.user-box .user {
+    float: left;
+    border-bottom: solid 5px #181818;
+    border-top: solid 5px #181818;
+    font-family: Starguard;
+    font-size: 24px;
+    height: 20px;
+    letter-spacing: 2px;
+    background: linear-gradient(0deg, #2495b9 0%, #28baea 100%);
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 3px;
+    padding-bottom: 6px;
+}
+
+.user-box .blue-triangle.left-triangle {
+    position: relative;
+    color: white;
+    width: 16px;
+    height: 32px;
+    background: linear-gradient(0deg, #2495b9 0%, #28baea 100%);
+    clip-path: polygon(100% 100%, 0% 50%, 100% 0%);
+    top: -16px;
+    left: 9px;
+}
+.user-box .blue-triangle.right-triangle {
+    position: relative;
+    color: white;
+    width: 16px;
+    height: 32px;
+    background: linear-gradient(0deg, #2495b9 0%, #28baea 100%);
+    clip-path: polygon(0% 100%, 100% 50%, 0% 0%);
+    top: -16px;
+    right: 26px;
+}
+.user-box .buffer
+{
+    float: left;
+    height: 42px;
+    width: 4px;
+    background-color: #181818;
+}
+
+.chevron {
+    position: fixed;
+    background-color: #2ac9fd;
+    min-height: 38px;
+    height: calc(50% - 7px);
+    width: 6px;
+}
+.chevron-top {
+    top: 40px;
+}
+.chevron-right {
+    right: 30px;
+}
+.chevron-bottom {
+    bottom: 16px;
+}
+.chevron-left {
+    left: 30px;
+}
